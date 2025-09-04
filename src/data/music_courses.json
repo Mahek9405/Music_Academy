@@ -1,0 +1,245 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "title": "Guiter Fundamentals",
+            "slug": "Guiter-fundamentals",
+            "description": "Learn the basics of playing guiter with our comprehensive beginner's course",
+            "price": 99.99,
+            "instructor": "John Doe",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/80.jpg",
+            "isFeatured": true,
+            "image": "/guiter.jpg",
+            "learningPoints": [
+                "Introduction to guitar anatomy and proper posture,Playing simple melodies and popular beginner songs",
+                "Learning open chords and basic chord transitions and Play simple songs step-by-step to build confidence and fluency",
+                "Fundamentals of strumming patterns and rhythm practice ,Introduction to basic rhythm patterns and simple accompaniment",
+                "Understanding timing with metronome and rhythm exercises",
+                "Introduction to fingerstyle and picking techniques",
+                "Building strength and flexibility in fingers with exercises"
+            ],
+            "relatedCourses": [2, 3]
+            
+        },
+        
+        {
+            "id": 2,
+            "title": "Piano Essentials",
+            "slug": "piano-essentials",
+            "description": "Master the piano basics and start playing your favorite tunes",
+            "price": 119.99,
+            "instructor": "Jane Smith",
+            "instructor_img":"https://mockmind-api.uifaces.co/content/human/104.jpg",
+            "isFeatured": true,
+            "image": "/piano.jpg",
+            "learningPoints": [
+                "Master the basic chords (major and minor) and learn smooth chord transitions and Introduction to basic rhythm patterns and simple accompaniment",
+                "Develop proper strumming techniques to play different rhythms confidently",
+                "Play simple songs step-by-step to build confidence and fluency",
+                "Understand rhythm, beats, and timing to stay in sync with music",
+                "Gain finger exercises to improve strength and flexibility for guitar playing"
+            ],
+            "relatedCourses": [1, 3]
+        },
+        {
+            "id": 3,
+            "title": "Violin Beginner Course",
+            "slug": "violin-beginner-course",
+            "description": "Start learning violin with simple exercises and fun songs",
+            "price": 89.99,
+            "instructor": "Alice Brown",
+            "instructor_img":"https://mockmind-api.uifaces.co/content/human/91.jpg",
+            "isFeatured": true,
+            "image": "/violin.jpg",
+            "learningPoints": [
+                "Introduction to violin parts, posture, and holding the bow,Basic rhythm and timing exercises with the bow",
+                "Learning to produce clear notes with correct bowing technique",
+                "Understanding finger placement and practicing basic scales,Playing simple melodies and beginner-level songs",
+                "Developing proper intonation and ear training",
+                "Introduction to dynamics and expression in violin playing"
+            ],
+            "relatedCourses": [2, 1]
+        },
+        {
+            "id": 4,
+            "title": "Drums for Starters",
+            "slug": "drums-for-starters",
+            "description": "Learn basic drum patterns, rhythm techniques, and essential hand coordination skills",
+            "price": 79.99,
+            "instructor": "Michael Lee",
+            "instructor_img":"https://mockmind-api.uifaces.co/content/human/92.jpg",
+            "isFeatured": true,
+            "image": "/drums.jpg",
+            "learningPoints": [
+                "Understanding drum kit parts and correct setup,Basic hand and foot coordination exercises",
+                "Learning simple drum beats and grooves, Practicing rhythm, timing, and tempo control",
+                "Introduction to drum rudiments (single stroke, double stroke, paradiddle)",
+                "Playing along with simple songs and backing tracks",
+                "Developing consistency with metronome practice"
+            ],
+            "relatedCourses": [2, 3]
+        },
+        {
+            "id": 5,
+            "title": "Flute Basics",
+            "slug": "flute-basics",
+            "description": "Learn to play the flute with easy-to-follow lessons, breath control techniques, and simple melodies",
+            "price": 69.99,
+            "instructor": "Emily Davis",
+            "instructor_img":"https://mockmind-api.uifaces.co/content/human/125.jpg",
+            "isFeatured": true,
+            "image": "/flute.jpg",
+            "learningPoints": [
+                "Introduction to flute parts, posture, and holding technique and Playing along with beginner-friendly songs",
+                "Basics of breath control and producing a clear sound, Practicing tone, pitch, and smooth note transitions",
+                "Learning correct fingering for simple notes and scales,Improving tone control and articulation for smoother transitions",
+                "Understanding rhythm and playing simple melodies",
+                "Developing consistency with regular practice exercises"
+            ],
+            "relatedCourses": [4, 3]
+        },
+        {
+            "id": 6,
+            "title": "Saxophone Fundamentals",
+            "slug": "saxophone-fundamentals",
+            "description": "Discover the joy of playing saxophone with beginner-friendly lessons.",
+            "price": 79.99,
+            "instructor": "James Anderson",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/112.jpg",
+            "isFeatured": true,
+            "image": "/saxophone.jpg",
+            "learningPoints": [
+                "Understanding saxophone anatomy, assembly, and maintenance,Playing basic jazz, blues, and pop tunes",
+                "Correct posture, hand positioning, and embouchure formation and Developing consistency with practice",
+                "Breathing and blowing techniques for producing a clear tone",
+                "Learning basic notes, scales, and simple melodies",
+                "Developing rhythm and timing through practice exercises",
+                "Improving tone control and articulation for smoother transitions"
+            ],
+            "relatedCourses": [1, 5]
+        },
+        {
+            "id": 7,
+            "title": "Tabla Basics",
+            "slug": "tabla-basics",
+            "description": "Learn the traditional Indian percussion instrument with step-by-step lessons.",
+            "price": 59.99,
+            "instructor": "Rahul Verma",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/90.jpg",
+            "isFeatured": false,
+            "image": "/tabla.jpg",
+            "learningPoints": [
+                "Learning basic tabla strokes (Dha, Dhin, Na, Tin, etc.) with correct hand technique and Developing consistency with practice",
+                "Understanding taal, rhythm cycles, and their importance in Indian classical music",
+                "Practicing simple compositions (Kayda, Tukra, Tihai) for beginners",
+                "Developing coordination between right (dayan) and left (bayan) drums",
+                "Building speed and clarity through daily practice patterns",
+                "Introduction to common taals like Teentaal, Keharwa, and Dadra",
+                "Playing tabla with simple bhajans and light classical songs"
+            ],
+            "relatedCourses": [4, 5]
+        },
+        {
+            "id": 8,
+            "title": "Harmonica for Beginners",
+            "slug": "harmonica-for-beginners",
+            "description": "Play simple tunes and improve your breathing techniques with harmonica.",
+            "price": 49.99,
+            "instructor": "Sophia Green",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/124.jpg",
+            "isFeatured": false,
+            "image": "/harmonica.jpg",
+            "learningPoints": [
+               "Developing basic breathing control for smooth airflow and consistent sound",
+                "Learning how to hold the harmonica correctly and maintain posture",
+                "Playing simple melodies using blow and draw notes",
+                "Understanding scales (major and minor) and their role in melody creation",
+                "Practicing bending notes to add expression and style",
+                "Introduction to basic rhythm patterns and simple accompaniment",
+                "Playing beginner-friendly songs in genres like folk, blues, and pop"
+            ],
+            "relatedCourses": [6, 1]
+        },
+        {
+            "id": 9,
+            "title": "Ukulele Starter Pack",
+            "slug": "ukulele-starter-pack",
+            "description": "Learn to strum fun and easy songs on the ukulele.",
+            "price": 54.99,
+            "instructor": "Liam Wilson",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/102.jpg",
+            "isFeatured": false,
+            "image": "/ukulele.jpg",
+            "learningPoints": [
+                "Learning how to hold the ukulele and tune it properly and Playing simple and popular beginner-friendly songs",
+                "Mastering basic open chords like C, G, Am, and F and also Understanding different strumming patterns for rhythm practice",
+                "Developing finger coordination and smooth chord transitions",
+                "Introduction to basic rhythm patterns and timing",
+                "Building confidence to sing along while playing"
+            ],
+            "relatedCourses": [1, 2]
+        },
+        {
+            "id": 10,
+            "title": "Keyboard Mastery",
+            "slug": "keyboard-mastery",
+            "description": "Go beyond piano basics and explore advanced keyboard techniques.",
+            "price": 129.99,
+            "instructor": "Olivia White",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/119.jpg",
+            "isFeatured": false,
+            "image": "/keyboard.jpg",
+            "learningPoints": [
+               "Understanding the keyboard layout and hand positioning, improvisation techniques and creating your own melodies",
+                "Learning scales, chords, and arpeggios for strong fundamentals Building confidence to sing along while playing",
+                "Sight-reading sheet music and chord progressions and Practicing rhythm, timing, and coordination with both hands",
+                "Playing popular songs and classical pieces with accuracy",
+                "Introduction to music theory for composing and arranging",
+                "Mastering dynamics, expression, and performance techniques"
+
+            ],
+            "relatedCourses": [2, 3]
+        },
+        {
+            "id": 11,
+            "title": "Trumpet Basics",
+            "slug": "trumpet-basics",
+            "description": "Learn to play the trumpet with simple exercises, breath control, and popular beginner tunes.",
+            "price": 89.99,
+            "instructor": "David Miller",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/85.jpg",
+            "isFeatured": true,
+            "image": "/trumpet.jpg",
+            "learningPoints": [
+                "Comprehensive introduction to trumpet anatomy, proper posture, holding techniques, and understanding mouthpiece usage for clear sound production",
+                "Mastering basic breathing exercises, embouchure formation, and blowing techniques to produce consistent and accurate notes",
+                "Learning simple melodies, popular beginner tunes, and practicing smooth transitions between notes and basic fingerings",
+                "Practicing major scales, rhythm exercises, and finger coordination to build strong foundational playing skills",
+                "Playing along with backing tracks, understanding tempo and timing, and developing confidence to perform simple pieces"
+            ],
+            "relatedCourses": [1, 2]
+        },
+        {
+            "id": 12,
+            "title": "Clarinet Fundamentals",
+            "slug": "clarinet-fundamentals",
+            "description": "Start learning clarinet with step-by-step lessons, proper fingerings, and beginner-friendly songs.",
+            "price": 79.99,
+            "instructor": "Sarah Johnson",
+            "instructor_img": "https://mockmind-api.uifaces.co/content/human/106.jpg",
+            "isFeatured": true,
+            "image": "/clarinet.jpg",
+            "learningPoints": [
+                "Detailed understanding of clarinet parts, assembly process, proper posture, and hand positioning for accurate note production",
+                "Learning correct breathing techniques, embouchure formation, and airflow management for producing a clear and steady tone",
+                "Step-by-step practice of fingerings, scales, and note transitions to build dexterity and coordination",
+                "Playing beginner-friendly songs, simple melodies, and exercises focusing on rhythm, timing, and musical expression",
+                "Introduction to basic music theory, dynamics, phrasing, and applying learned techniques to perform simple pieces confidently"
+            ],
+            "relatedCourses": [5, 6]
+        }
+
+
+            
+    ]    
+} 
