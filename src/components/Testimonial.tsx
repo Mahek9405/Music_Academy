@@ -2,6 +2,8 @@
 "use client";
 import React, { useRef, useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
 
 // Dummy testimonials with image
 const testimonials = [
@@ -82,11 +84,15 @@ const Testimonial = () => {
 
                 {/* Image + Name */}
                 <div className="flex flex-col items-center mt-auto">
-                  <img
-                    src={t.img}
-                    alt={t.name}
-                    className="w-16 h-16 rounded-full border-4 border-teal-400 shadow-md mb-3"
-                  />
+                  <div className="w-16 h-16 relative rounded-full overflow-hidden border-4 border-teal-400 shadow-md mb-3">
+                    <Image
+                      src={t.img}
+                      alt={t.name}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+
                   <h4 className="font-semibold text-gray-900">{t.name}</h4>
                   <p className="text-sm text-gray-500">{t.title}</p>
                 </div>

@@ -3,6 +3,8 @@
 import React from "react";
 import courseData from "../../../data/music_courses.json";
 import Link from "next/link";
+import Image from "next/image";
+
 
 interface Course {
   id: number;
@@ -45,12 +47,16 @@ const CourseDetailPage = ({ params }: Props) => {
     <div className="min-h-screen bg-gray-900 text-white py-8 px-4 max-w-5xl mx-auto mt-22 mb-5">
       {/* Hero Section */}
       {course.image && (
-        <img
-          src={course.image}
-          alt={course.title}
-          className="w-full h-92 object-cover rounded-xl mb-8 shadow-lg"
-        />
+        <div className="w-full h-92 relative mb-8 rounded-xl shadow-lg overflow-hidden">
+          <Image
+            src={course.image}
+            alt={course.title}
+            fill
+            className="object-cover rounded-xl"
+          />
+        </div>
       )}
+
 
       {/* Title & Price */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 md:px-20">
@@ -64,15 +70,21 @@ const CourseDetailPage = ({ params }: Props) => {
       <p className="text-gray-300 mb-6 text-lg md:px-20">{course.description}</p>
 
       {/* Instructor Card */}
-      <div className="bg-gray-800 p-6 rounded-xl shadow-md mb-8 max-w-md  mx-auto text-center">
+      <div className="bg-gray-800 p-6 rounded-xl shadow-md mb-8 max-w-md mx-auto text-center">
         <h2 className="text-2xl font-bold mb-2">Instructor</h2>
         <div className="space-x-4 flex flex-col items-center">
-          <img
-            src={course.instructor_img} 
-            alt={course.instructor}
-            className="w-16 h-16 rounded-full object-cover border-2 border-teal-400"
-          />
-          <div>
+          {/* Instructor Image */}
+          <div className="w-16 h-16 relative rounded-full overflow-hidden border-2 border-teal-400">
+            <Image
+              src={course.instructor_img}
+              alt={course.instructor}
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          {/* Instructor Info */}
+          <div className="mt-2">
             <p className="font-semibold text-xl">{course.instructor}</p>
             <p className="text-gray-400 text-sm">
               Expert in Music Training & Performance
@@ -80,6 +92,7 @@ const CourseDetailPage = ({ params }: Props) => {
           </div>
         </div>
       </div>
+
 
       {/* Learning Outcomes */}
       {course.learningPoints && course.learningPoints.length > 0 && (

@@ -2,6 +2,8 @@
 import React from "react";
 import courseData from "../../data/music_courses.json";
 import Link from "next/link";
+import Image from "next/image";
+
 
 interface Course {
   id: number;
@@ -36,9 +38,11 @@ const OurCourses = () => {
           >
             {/* Image */}
             <div className="w-full h-68 overflow-hidden">
-              <img
+              <Image
                 src={course.image}
                 alt={course.title}
+                width={400}       
+                height={280}       
                 className="w-full h-full object-cover"
               />
             </div>
@@ -54,10 +58,12 @@ const OurCourses = () => {
 
               {/* Instructor */}
               <div className="flex items-center gap-3 mt-4">
-                <img
+                <Image
                   src={course.instructor_img}
                   alt={course.instructor}
-                  className="w-10 h-10 rounded-full"
+                  width={40}      
+                  height={40}     
+                  className="rounded-full"
                 />
                 <span className="text-sm text-gray-200">
                   {course.instructor}
