@@ -4,6 +4,8 @@ import { useParams } from "next/navigation";
 
 const EnrollPage = () => {
   const { slug } = useParams();
+  const courseName = slug ? slug.toString().replace("-", " ") : "Course";
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,7 +16,7 @@ const EnrollPage = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState(""); // ✅ Status message state
+  const [status, setStatus] = useState(""); 
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -59,7 +61,7 @@ const EnrollPage = () => {
     <div className="min-h-screen bg-gray-900 text-white flex items-center justify-center p-6 mt-22">
       <div className="w-full max-w-lg bg-gray-800 shadow-lg rounded-2xl p-8 border border-gray-700">
         <h1 className="text-3xl font-bold text-teal-400 text-center mb-3">
-          Enroll in {slug.toString().replace("-", " ")}
+          Enroll in {courseName}
         </h1>
         <p className="text-gray-400 text-center mb-6 text-sm">
           Please fill the form below to join your selected course. We’ll contact you shortly with the details.
