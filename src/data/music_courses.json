@@ -208,7 +208,7 @@
             "price": 89.99,
             "instructor": "David Miller",
             "instructor_img": "https://mockmind-api.uifaces.co/content/human/85.jpg",
-            "isFeatured": true,
+            "isFeatured": false,
             "image": "/trumpet.jpg",
             "learningPoints": [
                 "Comprehensive introduction to trumpet anatomy, proper posture, holding techniques, and understanding mouthpiece usage for clear sound production",
@@ -227,7 +227,7 @@
             "price": 79.99,
             "instructor": "Sarah Johnson",
             "instructor_img": "https://mockmind-api.uifaces.co/content/human/106.jpg",
-            "isFeatured": true,
+            "isFeatured": false,
             "image": "/clarinet.jpg",
             "learningPoints": [
                 "Detailed understanding of clarinet parts, assembly process, proper posture, and hand positioning for accurate note production",
