@@ -14,17 +14,18 @@ interface Course {
   price: number;
   instructor: string;
   isFeatured: boolean;
+  instructor_img: string;
   image?: string;
   learningPoints?: string[];
   relatedCourses?: number[]; 
 }
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: { slug: string };
 }
 
 const CourseDetailPage = ({ params }: Props) => {
-  const { slug } = React.use(params); 
+  const { slug } = params; 
   const course = courseData.courses.find((c: Course) => c.slug === slug);
 
   if (!course) {
